@@ -54,7 +54,7 @@ Interlocutores internos — Directorio (rastrear respuesta pendiente >48h, prior
 
 - José Antonio Vial — [javial@intercontrol.cl](mailto:javial@intercontrol.cl) — Director, Casa Maule
 
-- Infante — [infantep9@gmail.com](mailto:infantep9@gmail.com) — Director, compliance
+- Patricio Infante — [infantep9@gmail.com](mailto:infantep9@gmail.com) — Director, compliance
 
 
 
@@ -190,8 +190,6 @@ Orden de ejecución: Calendar + Notion Tareas (en paralelo) → Notion Reuniones
 
 - **Anti-solapamiento al agendar:** Antes de crear cualquier evento o bloque nuevo (Foco, preparación, tareas), consultar los eventos ya existentes. No crear eventos que se superpongan. Respetar: mínimo 15 min de traslado entre eventos en distintas ubicaciones; break ≥10 min si hay 3 o más eventos consecutivos.
 
-
-
 - Al revisar si encuentras algun solapamiento ajustar a los espacios libres (reducir tiempo, cambiar de día, u otro).
 
 - Optimizar, no es necesario tener focos todos los días AM, pero si priorizar algunos días, si no hay mucho espacio libre y es necesario avanzar, advierte en el briefing.
@@ -199,8 +197,6 @@ Orden de ejecución: Calendar + Notion Tareas (en paralelo) → Notion Reuniones
 
 
 Bloques horarios de referencia (Revisar base "sistema operativo" semanal de José):
-
-
 
 - Mañana temprano (antes de primera reunión): Revisión de briefing, triaje Inbox.
 
@@ -218,8 +214,6 @@ Bloques horarios de referencia (Revisar base "sistema operativo" semanal de Jos�
 
 Utilizar colores que cobienen entre ellos, para que quede estéticamente bien. 
 
-
-
 Para el resto de la semana: Solo deadlines o reuniones que impacten qué conviene avanzar hoy. Máximo 3 ítems (a menos que haya cosas necesarias por fechas límites o avances necesarios; en esos casos se puede romper la regla de 3 items).
 
 
@@ -229,12 +223,7 @@ Para el resto de la semana: Solo deadlines o reuniones que impacten qué convien
 
 
 Query: Todas las entradas donde Estado ≠ "Listo" (usar vista Tabla: `view://7eb9b022-3a90-490b-a598-5ea7d85d1868`).
-
-
-
 Propiedades a extraer: Nombre · Estado · Prioridad · MIT hoy · Fecha límite · Tipo · Origen · Notas · Día asignado · Proyectos · createdTime · lastEditedTime.
-
-
 
 Clasificación para MITs (usada en PASO 3):
 
@@ -338,8 +327,6 @@ Lee todos los correos recibidos en esa ventana.
 
 Clasifica:
 
-
-
 - 🔴 **Acción urgente:** Requiere respuesta o acción hoy.
 
 - 🟡 **Acción no urgente:** Requiere respuesta pero no hoy.
@@ -355,13 +342,9 @@ Clasifica:
 Para cada accionable: remitente · asunto · qué se pide · plazo.
 
 
-
 Síntesis de hilos: Múltiples correos del mismo remitente o asunto → un solo punto accionable.
 
-
-
 Respuesta pendiente >48h: Busca solo en hilos con interlocutores clave (externos e internos, según lista en Contexto Permanente). No busques en todos los remitentes.
-
 
 
 Detección de insumos para Proyectos: Si un correo contiene información sustantiva sobre un proyecto activo (avance, decisión, cambio de alcance, nuevo contacto), registra para PASO 2.
@@ -388,7 +371,7 @@ Para cada compromiso huérfano identificado en PASO 1C:
 
 
 
-**Verificación anti-duplicados:** Antes de crear, buscar en Tareas.csv si ya existe una tarea con nombre similar (mismas palabras clave) vinculada al mismo proyecto y con Origen "Reunión". Si existe y su Estado ≠ "Listo", no duplicar — actualizar sus Notas agregando la referencia a la nueva reunión.
+**Verificación anti-duplicados:** Antes de crear, buscar en Tareas.csv si ya existe una tarea con nombre similar (mismas palabras clave) vinculada al mismo proyecto y con Origen "Reunión". Si existe y su Estado ≠ "Listo" o "Listo", no duplicar — actualizar sus Notas agregando la referencia a la nueva reunión. A veces puede ser que velva a aparecer en la tabla una tarea que ya fue completada, por lo tanto importante revisar en plano general.
 
 
 
@@ -437,7 +420,6 @@ Para correos clasificados 🔴 o 🟡 que impliquen una acción concreta de Jos�
 Crear tarea en Tareas.csv con:
 
 
-
 - `Nombre`: Acción concreta derivada del correo.
 
 - `Estado`: "Inbox" (para que José confirme en triaje).
@@ -452,21 +434,17 @@ Crear tarea en Tareas.csv con:
 
 
 
-**Límite:** Máximo 3 tareas desde correos por briefing. No crear tarea si la acción es solo "responder" (eso va al borrador de Gmail).
+**Límite:** No hay maximo de creación de tareas desde correos por briefing. No crear tarea si la acción es solo "responder" (eso va al borrador de Gmail). La idea es que no se pasa nada. 
 
 
 
 ### 2C) Actualizar Proyectos.csv
 
 
-
 Para cada proyecto activo que haya recibido información nueva (de reuniones, correos o tareas creadas):
 
 
-
 **Antes de actualizar** el campo `Siguiente acción`:
-
-
 
 1. Leer el valor actual del campo.
 
